@@ -1,0 +1,1101 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+ /* Global Tags */
+
+ h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+ }
+
+ span{
+    font-size: .9rem;
+    color: #757373;
+ }
+
+ h6{
+    font-size: 1.1rem;
+    color: rgb(24,24,49);
+ }
+
+
+ /* Navigation */
+ nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+ }
+
+ nav h1{
+   color: rgb(21,21,100);
+   font-size: 30px;
+   text-align: left;
+   padding-right: 10vw;
+ }
+
+ nav img{
+    width: 150px;
+    cursor: pointer;
+ }
+ 
+ nav .navigation ul{
+    display: flex;
+    align-items: center;
+ }
+
+ nav .navigation ul li{
+    list-style: none;
+    padding: 14px;
+    position: relative;
+ }
+
+ nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+ }
+
+ 
+ nav .navigation ul li a.active,
+
+ nav .navigation ul li a:hover{
+    color: #FDC93B;
+ }
+
+ nav .motto{
+   font-size: 15px;
+   text-align: left;
+ }
+
+ MArquee{
+   color: rgb(21,21,100);
+ }
+
+ /*Sub-Navigation*/
+ 
+ #subnavigation{
+   visibility: hidden;
+   position: fixed;
+   bottom: 0;
+   height: 60px;
+   justify-content: center;
+   z-index: 999;
+ }
+ nav .subnavigation ul{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+nav .subnavigation ul li{
+   list-style: none;
+   padding: 7px;
+   position: relative;
+   text-align: center;
+}
+
+nav .subnavigation ul li a{
+   text-decoration: none;
+   color: rgb(21,21,100);
+   font-size: 10px;
+   transition: 0.3s ease;
+   margin: auto;
+}
+nav .subnavigation p{
+   font-size: 8px;
+   font-weight: 400;
+   padding-bottom: 4px;
+}
+
+
+nav .subnavigation ul li a.active,
+
+nav .subnavigation ul li a:hover{
+   color: #FDC93B;
+}
+
+/* Home */
+
+#home,#history{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("images/school.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+#home h1{
+   color: #fff;
+   font-size: 2.2rem;
+   letter-spacing: 1px;
+   
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}   
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+   
+}
+
+#home .btn{
+    margin-top: 30px;
+    
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    
+}
+
+#home a.blue {
+    color: #fff;
+    background: rgb(21,21,100);
+    transition: 0.3s ease;
+    
+}
+
+#home a.blue:hover {
+    color:  rgb(21,21,100);
+    background: #fff;
+    
+}
+
+#home a.yellow {
+    color: #fff;
+    background: #FDC93B;
+    transition: 0.3s ease;
+    
+}
+
+#home a.yellow:hover {
+    color:  rgb(21,21,100);
+    background: #fff;
+    
+}
+
+/* features */
+
+#features{
+   height: 90vh;
+   text-align: center;
+   justify-content: center;
+}
+
+#features h1{
+   padding: 8vw 0 3vw 0;
+}
+
+#features p{
+   padding: 3vw 0 3vw 0;
+}
+
+#features .fea-base{
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+   grid-gap: 1rem;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+#features .fea-box{
+   background: #F9F9FF;
+   align-items: center;
+   border-radius: 7px;
+   padding-bottom: 2vw;
+}
+
+#features .fea-box i{
+   font-size: 2.3rem;
+   color: rgb(44, 44, 80);
+   padding: 2vw 0 2vw 0;
+}
+
+#features .fea-box h3{
+   font-size: 1.2rem;
+   font-weight: 600;
+   color:rgb(46, 46, 59);
+}
+
+#features .fea-box p{
+   font-size: 1rem;
+   font-weight: 400;
+   color:rgb(70, 70, 87);
+}
+
+/*course*/
+
+#course{
+   background-color: #ffffff;
+   height: 80vh;
+   padding-left: 8vw;
+   padding-right: 8vw;
+   text-align: center;
+}
+
+#course h1{
+   padding: 5vw 0 3vw 0;
+}
+
+#course p{
+   padding: 3vw 0 3vw 0;
+}
+
+#course .cou-base{
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+   grid-gap: 1rem;
+}
+
+#course .cou-box{
+   background: #F9F9FF;
+   border-radius: 7px;
+   padding-bottom: 2vw;
+   align-items: center;
+}
+
+#course .cou-box i{
+   font-size: 2.3rem;
+   color: rgb(44, 44, 80);
+   padding: 2vw 0 2vw 0;
+}
+
+#course .cou-box h3{
+   font-size: 1.2rem;
+   font-weight: 600;
+   color:rgb(46, 46, 59);
+}
+
+#course .cou-box h2{
+   color:rgb(44, 44, 80) ;
+}
+
+#course .cou-box p{
+   font-size: 1rem;
+   font-weight: 400;
+   color:rgb(70, 70, 87);
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+/*courses*/
+
+#courses{
+   background-color: #ffffff;
+   height: 97vh;
+   padding-left: 8vw;
+   padding-right: 8vw;
+   text-align: center;
+}
+
+#courses h1{
+   padding: 13vw 0 3vw 0;
+}
+
+#courses p{
+   padding: 3vw 0 3vw 0;
+}
+
+#courses .cous-base{
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+   grid-gap: 1rem;
+}
+
+#courses .cous-box{
+   background: #F9F9FF;
+   border-radius: 7px;
+   padding-bottom: 2vw;
+   align-items: center;
+}
+
+#courses .cous-box i{
+   font-size: 2.3rem;
+   color: rgb(44, 44, 80);
+   padding: 2vw 0 2vw 0;
+}
+
+#courses .cous-box h3{
+   font-size: 1.2rem;
+   font-weight: 600;
+   color:rgb(46, 46, 59);
+}
+
+#courses .cous-box h2{
+   color:rgb(44, 44, 80) ;
+}
+
+#courses .cous-box p{
+   font-size: 1rem;
+   font-weight: 400;
+   color:rgb(70, 70, 87);
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+
+
+/*Admission*/
+
+
+#admission{
+   height: 97vh;
+}
+
+#admission h1{
+   padding-top: 13vw;
+   font-weight: 500;
+   text-align: center;
+}
+
+#admission h2{
+   padding-top: 5vw;
+   text-align: center;
+   font-weight: 350;
+   font-size: 17px;
+}
+
+#admission .btn{
+   margin-top: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#admission a{
+   text-decoration: none;
+   font-size: 0.9rem;
+   padding: 13px 35px;
+   background-color: #fff;
+   font-weight: 600;
+   border-radius: 5px;
+   
+}
+
+#admission a.blue {
+   color: #fff;
+   background: rgb(21,21,100);
+   transition: 0.5s ease;
+}
+
+#admission a.blue:hover {
+   color:  rgb(21,21,100);
+   background: #fff;
+   border: 1px solid #202020;
+}
+
+/*History*/
+
+#history{
+   text-align: center;
+   height: 97vh;
+}
+
+#history p{
+   font-size: 1rem;
+   font-weight: 400;
+   padding: 5vw 2vw;
+   color: #fff;
+}
+
+#history .box{
+   width: 90%;
+   height: 60%;
+   border: 5px solid #fff;
+   border-radius: 20px;
+   background: rgba(105, 105, 105, 0.575);
+}
+
+/* contact */
+
+#contact{
+   height: 97vh;
+}
+#contact .con-base{
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+   grid-gap: 3rem;
+   padding: 1.5vw 5vw 1vw 5vw;
+   text-align: center;
+}
+
+#contact .con-box{
+   background: #F9F9FF;
+   border-radius: 7px;
+   align-items: center;
+   padding-bottom: 1vw;
+}
+
+#contact .con-box i{
+   font-size: 2.4rem;
+   color: rgb(44, 44, 80);
+   padding: 2vw 0 2vw 0;
+}
+
+#contact h1{
+   font-size: 2.3rem;
+   font-weight: 600;
+   color:rgb(46, 46, 59);
+   padding-top: 12vw;
+   text-align: center;
+}
+
+#contact .social_media i{
+   color: rgb(44, 44, 80);
+   
+}
+
+#contact .social_media i:hover{
+   color: #FDC93B;
+   transition: 0.3s ease-in-out;
+}
+
+#contact .social_media h1{
+   font-size: 1.7rem;
+   padding-top: 30px;
+   letter-spacing: 15px;
+}
+
+#contact .con-box h3{
+   font-size: 1.5rem;
+   font-weight: 600;
+   color:rgb(46, 46, 59);
+   padding-bottom: 40px;
+}
+
+#contact .con-box h2{
+   color:rgb(44, 44, 80) ;
+}
+
+#contact .con-box h4{
+   color:rgb(44, 44, 80) ;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+#contact .con-box p{
+   font-size: 1rem;
+   font-weight: 400;
+   color:rgb(70, 70, 87);
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+#contact .con-box iframe{
+   width:20vw;
+   height: 13vw;
+}
+
+#contact form{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: center;
+}
+
+#contact input,select,textarea{
+   padding: 1.4rem;
+   border: 1px solid rgb(46, 46, 59);
+}
+
+textarea{
+   height:6rem;
+}
+
+button{
+   display: flex;
+   width: 8rem;
+   height: 3rem;
+   padding: 1.4rem;
+   cursor: pointer;
+   background: #FDC93B;
+   color:#fff;
+   border-radius: 30px;
+   font-size: 20px;
+   align-items: center;
+   justify-content: center;
+}
+
+button:hover{
+   color: rgb(21,21,100);
+   background: #fff;
+   transition: 0.5s ease;
+}
+
+/* Login */
+
+#login{
+   height: 97vh;
+}
+
+#login h3{
+   color: #101C32;
+   text-align: center;
+   padding-top: 15vw;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+/* Downloads */
+
+#downloads{
+   height: 97vh;
+}
+
+#downloads h3{
+   color: #101C32;
+   text-align: center;
+   padding-top: 15vw;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+/* footer */
+
+footer{
+   height:10px;
+   width: 100%;
+   bottom: 0;
+   background-color: #101C32;
+   color: #7b838a;
+   text-align:center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.footer p {
+   width: 50%;
+   color: #fff;
+   font-size: 0.9rem;
+   line-height: 10px;
+}
+
+.footer a{
+   text-decoration: none;
+   color: #7b838a;
+}
+
+.footer a:hover{
+   color: #fff;
+   transition: 0.5s ease;
+}
+
+@media (max-width: 495px){
+   nav img{
+      width: 70px;
+   }
+   
+   nav h1{
+      font-size: 25px;
+      text-align: center;
+      margin: auto;
+    }
+
+    nav .motto{
+      font-size: 12px;
+      text-align: center;
+      position: 50%;
+    }
+
+    nav .navigation ul{
+      display: none;
+   }
+
+    MArquee{
+      font-size: 10px;
+    }
+
+    #features{
+      height: 70%;
+      text-align: center;
+      justify-content: center;
+   }
+
+   #features p{
+      padding: 3vw 40px 3vw 40px;
+   }
+   
+   #course{
+      background-color: #ffffff;
+      height: 165vh;
+      width: 100%;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      text-align: center;
+   }
+
+   #subnavigation{
+      visibility: visible;
+    }
+   
+   nav .subnavigation ul li a.active,
+   
+   nav .subnavigation ul li a:hover{
+      color: #FDC93B;
+   }
+
+   #history{
+      height: 162vh;
+   }
+
+   #history p{
+      font-size: .7rem;
+      font-weight: 250;
+      padding: 1vw 2vw;
+      color: #fff;
+      padding-top: 25px;
+   }
+
+   #history .box{
+      width: 90%;
+      height: 230vw;
+      border: 1px solid #fff;
+      border-radius: 10px;
+   }
+
+   #admission{
+      height: 117vh;
+   }
+
+   #admission h1{
+      padding-top: 35vw;
+      font-weight: 500;
+      font-size: 25px;
+   }
+
+   #admission h2{
+      width: 78%;
+      font-weight: 350;
+      font-size: 16px;
+      margin: auto;
+   }
+
+   #course{
+      height: 130vh;
+   }
+
+   #courses{
+      height: 175vh;
+   }
+
+   #courses h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding: 35vw 0 3vw 0;
+   }
+
+   #contact{
+      height: 220vh;
+   }
+
+   #contact h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding-top: 35vw;
+      text-align: center;
+   }
+
+   #contact .con-box iframe{
+      width:50vw;
+      height: 33vw;
+   }
+
+   #contact .con-box i{
+      font-size:1.8rem;
+   }
+
+   button{
+      width: 8rem;
+      height: 0.6rem;
+      padding: 1.2rem;
+      font-size: 18px;
+   }
+
+   #login{
+      height: 89h;
+   }
+   
+   #login h3{
+      padding-top: 75vw;
+      font-size: 23px;
+   }
+
+   #downloads{
+      height: 89vh;
+   }
+   
+   #downloads h3{
+      padding-top: 85vw;
+      font-size: 23px;
+   }
+
+   footer{
+      height: 160px;
+   }
+}
+
+
+@media (max-width: 650px){
+   nav img{
+      width: 70px;
+   }
+   
+   nav h1{
+      font-size: 25px;
+      text-align: center;
+      margin: auto;
+    }
+
+    nav .motto{
+      font-size: 12px;
+      text-align: center;
+      position: 50%;
+    }
+
+    nav .navigation ul{
+      display: none;
+   }
+
+    MArquee{
+      font-size: 10px;
+    }
+
+    #features{
+      height: 70%;
+      text-align: center;
+      justify-content: center;
+   }
+
+   #features p{
+      padding: 3vw 40px 3vw 40px;
+   }
+   
+   #course{
+      background-color: #ffffff;
+      height: 165vh;
+      width: 100%;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      text-align: center;
+   }
+
+   #subnavigation{
+      visibility: visible;
+    }
+   
+   nav .subnavigation ul li a.active,
+   
+   nav .subnavigation ul li a:hover{
+      color: #FDC93B;
+   }
+
+   #history{
+      height: 162vh;
+   }
+
+   #history p{
+      font-size: .7rem;
+      font-weight: 250;
+      padding: 1vw 2vw;
+      color: #fff;
+   }
+
+   #history .box{
+      width: 90%;
+      height: 230vw;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      margin-top: 55px;
+   }
+   #history .box p{
+      padding-top: 18px;
+   }
+
+   #admission{
+      height: 117vh;
+   }
+
+   #admission h1{
+      padding-top: 35vw;
+      font-weight: 500;
+      font-size: 25px;
+   }
+
+   #admission h2{
+      width: 78%;
+      font-weight: 350;
+      font-size: 16px;
+      margin: auto;
+   }
+
+   #course{
+      height: 130vh;
+   }
+
+   #courses{
+      height: 175vh;
+   }
+
+   #courses h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding: 35vw 0 3vw 0;
+   }
+
+   #contact{
+      height: 205vh;
+   }
+
+   #contact h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding-top: 35vw;
+      text-align: center;
+   }
+
+   #contact .con-box iframe{
+      width:50vw;
+      height: 33vw;
+   }
+
+   #contact .con-box i{
+      font-size:1.8rem;
+   }
+
+   button{
+      width: 8rem;
+      height: 0.6rem;
+      padding: 1.2rem;
+      font-size: 18px;
+   }
+
+   #login{
+      height: 89h;
+   }
+   
+   #login h3{
+      padding-top: 75vw;
+      font-size: 23px;
+   }
+
+   #downloads{
+      height: 89vh;
+   }
+   
+   #downloads h3{
+      padding-top: 85vw;
+      font-size: 23px;
+   }
+
+   footer{
+      height: 160px;
+   }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 651px){
+   nav img{
+      width: 120px;
+   }
+   
+   nav h1{
+      font-size: 25px;
+      text-align: center;
+      margin: auto;
+    }
+
+    nav .motto{
+      font-size: 12px;
+      text-align: center;
+      position: 50%;
+    }
+
+    nav .navigation ul{
+      display: none;
+   }
+
+    MArquee{
+      font-size: 10px;
+    }
+
+    #features{
+      height: 70%;
+      text-align: center;
+      justify-content: center;
+   }
+
+   #features p{
+      padding: 3vw 40px 3vw 40px;
+   }
+   
+   #course{
+      background-color: #ffffff;
+      height: 100px;
+      width: 100%;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      text-align: center;
+   }
+
+   #subnavigation{
+      visibility: visible;
+    }
+
+    nav .subnavigation ul li a{
+      text-decoration: none;
+      color: rgb(21,21,100);
+      font-size: 15px;
+      transition: 0.3s ease;
+      margin: auto;
+   }
+   nav .subnavigation p{
+      font-size: 10px;
+      font-weight: 400;
+      padding-bottom: 4px;
+   }
+   
+   nav .subnavigation ul li a.active,
+   
+   nav .subnavigation ul li a:hover{
+      color: #FDC93B;
+   }
+
+   #history{
+      height: 89vh;
+   }
+
+   #history p{
+      font-size: .7rem;
+      font-weight: 250;
+      padding: 1vw 2vw;
+      color: #fff;
+   }
+
+   #history .box{
+      width: 90%;
+      height: 80%;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      margin-top: 55px;
+   }
+   #history .box p{
+      padding-top: 18px;
+   }
+
+   #admission{
+      height: 90vh;
+   }
+
+   #admission h1{
+      padding-top: 20vw;
+      font-weight: 500;
+      font-size: 25px;
+   }
+
+   #admission h2{
+      width: 78%;
+      font-weight: 350;
+      font-size: 16px;
+      margin: auto;
+   }
+
+   #course{
+      height: 82vh;
+   }
+
+   #courses{
+      height: 120vh;
+      grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+   }
+
+   #courses h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding: 20vw 0 3vw 0;
+   }
+
+   #contact{
+      height: 100%;
+   }
+
+   #contact h1{
+      font-size: 30px;
+      font-weight: 600;
+      padding-top: 20%;
+      text-align: center;
+   }
+
+   #contact .con-box iframe{
+      width:20vw;
+      height: 20vw;
+   }
+
+   #contact .con-box i{
+      font-size:1.8rem;
+   }
+
+   button{
+      width: 8rem;
+      height: 0.6rem;
+      padding: 1.2rem;
+      font-size: 18px;
+   }
+
+   #login{
+      height: 90vh;
+   }
+   
+   #login h3{
+      padding-top: 30%;
+      font-size: 28px;
+   }
+
+   #downloads{
+      height: 90vh;
+   }
+   
+   #downloads h3{
+      padding-top: 30%;
+      font-size: 28px;
+   }
+
+   footer{
+      height: 120px;
+   }
+}

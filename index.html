@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST THOMAS COLLEGE HSS THRISSUR</title>
+    <script language=javascript>
+        var rev = "fwd";
+        function titlebar(val){
+            var msg  = "ST.THOMAS C.H.S.S THRISSUR";
+            var res = " ";
+            var speed = 200;
+            var pos = val;
+            msg = ""+msg+"";
+            var le = msg.length;
+            if(rev == "fwd"){
+                if(pos < le){
+                    pos = pos+1;
+                    scroll = msg.substr(0,pos);
+                    document.title = scroll;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "bwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+            else {
+                if(pos > 0) {
+                    pos = pos-1;
+                    var ale = le-pos;
+                    scrol = msg.substr(ale,le);
+                    document.title = scrol;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "fwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+        }
+        titlebar(0);
+    </script>
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico" />
+    <script src="https://kit.fontawesome.com/c8d63558d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation-->
+    <nav>
+        <img src="images/logo.jpeg" alt="School Emblem">
+        <h1>ST.THOMAS COLLEGE HSS,THRISSUR<br><div class="motto">VERITAS VOS LIBERABIT</div></h1>
+        <div class="navigation">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+            </ul>
+        </div>
+    </nav>
+<MArquee direction="left">THIS IS ONLY A DEMO WEBSITE CREATED BY ONE OF THE STUDENT IN THE INSTITUTION AS A PART OF CURRICULUM.SO DON"T LEAVE ANY PERSONAL INFORMATIONS OR PASSWORDS IN THIS WEBSITE.THANKYOU</MArquee>
+
+<nav id="subnavigation">
+    <div class="subnavigation">
+        <ul>
+            <li><a class="active" href="#"><i class="fa-solid fa-house"></i><br><p>HOME</p></a></li>
+            <li><a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i><br><p>HISTORY</p></a></li>
+            <li><a href="admission.html"><i class="fa-solid fa-ticket"></i><br><p>ADMISSION</p></a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-school"></i><br><p>COURSES</p></a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-phone"></i><br><p>CONTACT</p></a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><br><p>LOGIN</p></a></li>
+            <li><a href="downloads.html"><i class="fa-solid fa-download"></i><br><p>DOWNLOAD</p></a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!--Home-->
+
+    <section id="home">
+        <h2>Enhance Your Future With Us</h2>
+        <p>ST.THOMAS COLLEGE HIGHER SECONDARY SCHOOL,THRISSUR is an aided Higher Secondary School for boys located in Thrissur city,the cultural capital of Kerala.
+        </p>
+        <div class="btn">
+            <a class="blue" href="#">Learn More</a>
+            <a class="yellow" href="#course">Courses </a>
+        </div>
+    </section>
+
+    <!--features-->
+
+    <section id="features">
+        <h1>Awesome Features</h1>
+        <p>Education is the passport to the future, tomorrow belongs to those who prepare for it today</p>
+        <div class="fea-base" >
+            <div class="fea-box">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Infrastructure</h3>
+                <p>We provide better infrastructure possibilities for students in our institution</p> 
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>Experienced Teachers</h3>
+                <p>We have teachers with minimum a decades experience in teaching</p> 
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Lab Facilities</h3>
+                <p>We provide laboratary facilities for students to help them formulate their on ideas and to develop critical analysis skills</p> 
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>Library</h3>
+                <p>Our library includes 1000+ books making reading habit in students</p> 
+            </div>
+        </div>
+    </section>
+
+    <!--Courses-->
+    <section id="course">
+        <h1>Our Courses</h1>
+        <p>Education is the passport to the future, tomorrow belongs to those who prepare for it today</p>
+        <div class="cou-base" >
+            <div class="cou-box">
+                <h2><i class="fa-solid fa-u"></i>.<i class="fa-solid fa-p"></i></h2>
+                <h3>STD:5 - STD:7</h3>
+                <p>Providing best in class U.P education to our students</p> 
+            </div>
+            <div class="cou-box">
+                <h2><i class="fa-solid fa-h"></i>.<i class="fa-solid fa-s"></i></h2>
+                <h3>STD:8 - STD:10</h3>
+                <p>Providing best in class H.S education to our students</p> 
+            </div>
+            <div class="cou-box">
+                <h2><i class="fa-solid fa-h"></i>.<i class="fa-solid fa-s"></i>.<i class="fa-solid fa-s"></i></h2>
+                <h3>+1 & +2</h3>
+                <p>Providing best in class H.S.S education to our students</p> 
+            </div>
+        </div>
+    </section> 
+
+    <footer class="footer">
+        <p>
+            <div class="yt-logo"><i class="fa-regular fa-copyright"></i> 2023 All Rights Reserved | ST.THOMAS C.H.S.S THRISSUR | Developed by <a href="https://www.youtube.com/@technomazemalayalam">Ashrith Varghese</a> 
+            </div>
+        </p>
+    </footer>
+
+</body>
+
+</html>
